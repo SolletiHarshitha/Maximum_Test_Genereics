@@ -15,11 +15,11 @@ namespace TestProject
         {
             ///AAA Methodology
             //Arrange
-            string firstValue = "Peach", secondValue = "Apple", thirdValue = "Banana";
-            string expected = firstValue;
+            int[] intArray = { 10, 20, 30 };
+            int expected = 30;
             //Act
-            MaximumAmongThree max= new MaximumAmongThree(); ;
-            string actual = max.FindMaxValueOfString(firstValue, secondValue, thirdValue);
+            MaximumAmongThree<int> max = new MaximumAmongThree<int>(intArray);
+            int actual = max.FindMaxValue();
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -31,11 +31,11 @@ namespace TestProject
          {
             ///AAA Methodology
             //Arrange
-            string firstValue = "Apple", secondValue = "Peach", thirdValue = "Banana";
-            string expected = secondValue;
+            float[] floatArray = { 10.3f, 20.3f, 30.3f };
+            float expected = 30.3f;
             //Act
-            MaximumAmongThree max = new MaximumAmongThree(); ;
-            string actual = max.FindMaxValueOfString(firstValue, secondValue, thirdValue);
+            MaximumAmongThree<float> max = new MaximumAmongThree<float>(floatArray);
+            float actual = max.FindMaxValue();
             //Assert
             Assert.AreEqual(expected, actual);
          }
@@ -47,11 +47,11 @@ namespace TestProject
          {
             ///AAA Methodology
             //Arrange
-            string firstValue = "Apple", secondValue = "Banana", thirdValue = "Peach";
-            string expected = thirdValue;
+            string[] strArray = { "Apple", "Banana", "Peach" };
+            string expected = "Peach";
             //Act
-            MaximumAmongThree max = new MaximumAmongThree(); ;
-            string actual = max.FindMaxValueOfString(firstValue, secondValue, thirdValue);
+            MaximumAmongThree<string> max = new MaximumAmongThree<string>(strArray);
+            string actual = max.FindMaxValue();
             //Assert
             Assert.AreEqual(expected, actual);
 

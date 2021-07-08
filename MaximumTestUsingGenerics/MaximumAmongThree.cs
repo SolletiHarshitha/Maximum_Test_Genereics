@@ -4,69 +4,22 @@ using System.Text;
 
 namespace MaximumTestUsingGenerics
 {
-    public class MaximumAmongThree
+    public class MaximumAmongThree<T> where T :IComparable
     {
-        public int FindMaxValueOfInt(int first,int second,int third)
+        public T[] array;
+        public MaximumAmongThree(T[] array)
         {
-            if(first.CompareTo(second) > 0 && first.CompareTo(second) > 0)
-            {
-                return first;
-            }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
-            {
-                return second;
-            }
-            else if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
-            {
-                return third;
-            }
-            else
-            {
-                Console.WriteLine("All three values are equal");
-                return 0;
-            }
+            this.array = array;
         }
-
-        public float FindMaxValueOfFloat(float first, float second, float third)
+        public T[] Sort()
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(second) > 0)
-            {
-                return first;
-            }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
-            {
-                return second;
-            }
-            else if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
-            {
-                return third;
-            }
-            else
-            {
-                Console.WriteLine("All three values are equal");
-                return 0;
-            }
+            Array.Sort(array);
+            return array;
         }
-
-        public string FindMaxValueOfString(string first, string second, string third)
+        public T FindMaxValue()
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(second) > 0)
-            {
-                return first;
-            }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
-            {
-                return second;
-            }
-            else if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
-            {
-                return third;
-            }
-            else
-            {
-                Console.WriteLine("All three values are equal");
-                return null;
-            }
+            T[] sorted = this.Sort();
+            return sorted[sorted.Length - 1];
         }
     }
 }
