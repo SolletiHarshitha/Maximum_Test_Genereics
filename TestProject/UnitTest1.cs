@@ -16,7 +16,7 @@ namespace TestProject
         /// TC 1.1 -Maximum Number at first value
         /// </summary>
         [TestMethod]
-        public void TestMaxValue()
+        public void TestMethod1()
         {
             ///AAA Methodology
             //Arrange
