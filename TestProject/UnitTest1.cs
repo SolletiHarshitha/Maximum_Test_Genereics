@@ -15,11 +15,11 @@ namespace TestProject
         {
             ///AAA Methodology
             //Arrange
-            int firstValue = 30, secondValue = 10, thirdValue = 20;
-            int expected = firstValue;
+            float firstValue = 30.3f, secondValue = 10.3f, thirdValue = 20.3f;
+            float expected = firstValue;
             //Act
             MaximumAmongThree max= new MaximumAmongThree(); ;
-            int actual = max.FindMaxValueOfInt(firstValue, secondValue, thirdValue);
+            float actual = max.FindMaxValueOfFloat(firstValue, secondValue, thirdValue);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -31,11 +31,11 @@ namespace TestProject
          {
              ///AAA Methodology
              //Arrange
-             int firstValue = 10, secondValue = 30, thirdValue = 20;
-             int expected = secondValue;
+             float firstValue = 10.3f, secondValue = 30.3f, thirdValue = 20.3f;
+             float expected = secondValue;
              //Act
              MaximumAmongThree max= new MaximumAmongThree(); ;
-             int actual = max.FindMaxValueOfInt(firstValue, secondValue, thirdValue);
+             float actual = max.FindMaxValueOfFloat(firstValue, secondValue, thirdValue);
              //Assert
              Assert.AreEqual(expected, actual);
          }
@@ -47,11 +47,11 @@ namespace TestProject
          {
              ///AAA Methodology
              //Arrange
-             int firstValue = 10, secondValue = 20, thirdValue = 30;
-             int expected = thirdValue;
+             float firstValue = 10.3f, secondValue = 20.3f, thirdValue = 30.3f;
+             float expected = thirdValue;
              //Act
              MaximumAmongThree max= new MaximumAmongThree(); ;
-             int actual = max.FindMaxValueOfInt(firstValue, secondValue, thirdValue);
+             float actual = max.FindMaxValueOfFloat(firstValue, secondValue, thirdValue);
              //Assert
              Assert.AreEqual(expected, actual);
 
