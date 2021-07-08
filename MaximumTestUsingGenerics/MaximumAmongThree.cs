@@ -6,7 +6,7 @@ namespace MaximumTestUsingGenerics
 {
     public class MaximumAmongThree
     {
-        public int FindMaxValue(int first,int second,int third)
+        public int FindMaxValueOfInt(int first,int second,int third)
         {
             if(first.CompareTo(second) > 0 && first.CompareTo(second) > 0)
             {

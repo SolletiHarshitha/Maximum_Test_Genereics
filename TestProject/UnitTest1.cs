@@ -24,7 +24,7 @@ namespace TestProject
             int expected = firstValue;
             //Act
             MaximumAmongThree max= new MaximumAmongThree(); ;
-            int actual = max.FindMaxValue(firstValue, secondValue, thirdValue);
+            int actual = max.FindMaxValueOfInt(firstValue, secondValue, thirdValue);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -40,7 +40,7 @@ namespace TestProject
              int expected = secondValue;
              //Act
              MaximumAmongThree max= new MaximumAmongThree(); ;
-             int actual = max.FindMaxValue(firstValue, secondValue, thirdValue);
+             int actual = max.FindMaxValueOfInt(firstValue, secondValue, thirdValue);
              //Assert
              Assert.AreEqual(expected, actual);
          }
@@ -56,7 +56,7 @@ namespace TestProject
              int expected = thirdValue;
              //Act
              MaximumAmongThree max= new MaximumAmongThree(); ;
-             int actual = max.FindMaxValue(firstValue, secondValue, thirdValue);
+             int actual = max.FindMaxValueOfInt(firstValue, secondValue, thirdValue);
              //Assert
              Assert.AreEqual(expected, actual);
 
