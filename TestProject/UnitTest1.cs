@@ -15,11 +15,11 @@ namespace TestProject
         {
             ///AAA Methodology
             //Arrange
-            float firstValue = 30.3f, secondValue = 10.3f, thirdValue = 20.3f;
-            float expected = firstValue;
+            string firstValue = "Peach", secondValue = "Apple", thirdValue = "Banana";
+            string expected = firstValue;
             //Act
             MaximumAmongThree max= new MaximumAmongThree(); ;
-            float actual = max.FindMaxValueOfFloat(firstValue, secondValue, thirdValue);
+            string actual = max.FindMaxValueOfString(firstValue, secondValue, thirdValue);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -29,15 +29,15 @@ namespace TestProject
          [TestMethod]
          public void TestMethod2()
          {
-             ///AAA Methodology
-             //Arrange
-             float firstValue = 10.3f, secondValue = 30.3f, thirdValue = 20.3f;
-             float expected = secondValue;
-             //Act
-             MaximumAmongThree max= new MaximumAmongThree(); ;
-             float actual = max.FindMaxValueOfFloat(firstValue, secondValue, thirdValue);
-             //Assert
-             Assert.AreEqual(expected, actual);
+            ///AAA Methodology
+            //Arrange
+            string firstValue = "Apple", secondValue = "Peach", thirdValue = "Banana";
+            string expected = secondValue;
+            //Act
+            MaximumAmongThree max = new MaximumAmongThree(); ;
+            string actual = max.FindMaxValueOfString(firstValue, secondValue, thirdValue);
+            //Assert
+            Assert.AreEqual(expected, actual);
          }
          /// <summary>
          /// TC 1.3 -MAximum Number at third value
@@ -45,15 +45,15 @@ namespace TestProject
          [TestMethod]
          public void TestMethod3()
          {
-             ///AAA Methodology
-             //Arrange
-             float firstValue = 10.3f, secondValue = 20.3f, thirdValue = 30.3f;
-             float expected = thirdValue;
-             //Act
-             MaximumAmongThree max= new MaximumAmongThree(); ;
-             float actual = max.FindMaxValueOfFloat(firstValue, secondValue, thirdValue);
-             //Assert
-             Assert.AreEqual(expected, actual);
+            ///AAA Methodology
+            //Arrange
+            string firstValue = "Apple", secondValue = "Banana", thirdValue = "Peach";
+            string expected = thirdValue;
+            //Act
+            MaximumAmongThree max = new MaximumAmongThree(); ;
+            string actual = max.FindMaxValueOfString(firstValue, secondValue, thirdValue);
+            //Assert
+            Assert.AreEqual(expected, actual);
 
          }
 

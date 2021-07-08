@@ -8,7 +8,7 @@ namespace MaximumTestUsingGenerics
         {
             Console.WriteLine("Maximum Among Three");
             MaximumAmongThree max = new MaximumAmongThree();
-            float result = max.FindMaxValueOfFloat(10.5f, 20.5f, 30.5f);
+            string result = max.FindMaxValueOfString("Apple","Peach","Banana");
             Console.WriteLine("Maximum value is : "+result);
             
         }
