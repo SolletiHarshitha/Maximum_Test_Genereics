@@ -6,12 +6,7 @@ namespace TestProject
     [TestClass]
     public class UnitTest1
     {
-        /*MaximumAmongThree max;
-
-        public void SetUp()
-        {
-            max = new MaximumAmongThree();
-        }*/
+        
         /// <summary>
         /// TC 1.1 -Maximum Number at first value
         /// </summary>
